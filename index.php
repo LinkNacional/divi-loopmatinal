@@ -68,7 +68,7 @@ if( !class_exists('LKN_Divi_Wp_Loop_Matinal_Player') ){
                     $title =  "<h3>".$content."</h3>";
                 }
                 //foreach($x->channel->item as $entry) {//}
-                   $player = "<audio controls><source src='".$xml->channel->item[0]->link."' type='audio/mpeg'>Seu navegador n達o permiti a tag audio.</audio>";
+                   $player = "<audio controls><source src='".$xml->channel->item[0]->enclosure['url']."' type='audio/mpeg'>Seu navegador n達o permiti a tag audio.</audio>";
                    
                 if($a['title'] == 'false'){
                     $title =  "";
